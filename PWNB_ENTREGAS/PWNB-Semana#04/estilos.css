@@ -1,0 +1,28 @@
+h1 {
+    text-align: center;
+    font-size: 40px;
+    background-color: brown;
+}
+p {
+    font-size: 20px;
+}
+nav {
+    display: flex;
+    
+}
+.menu {
+    display: flex;
+    align-items: center;
+    float: left;
+    margin: 10px;
+    text-align: center;
+    
+}
+.ferramentas {
+    float: left;
+    flex: 1;
+    margin-right: 60%;
+}
+img {
+    height:90px;
+}
