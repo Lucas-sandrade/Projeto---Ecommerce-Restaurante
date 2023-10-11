@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="login.css">
+    <script src="telaLogin.js"></script>
     <title>Formulario de login</title>
 </head>
 <body>
@@ -23,7 +24,7 @@
                 <div class="input-grupo">
                     <div class="input-box">
                         <label for="EmailUsuario">E-mail</label>
-                        <input id="email" type="email" name="email" required>
+                        <input id="email" type="email" name="email" oninput="nameValidate()" required>
                     </div>
                     
                     <div class="input-box">
@@ -34,7 +35,7 @@
 
                 <div class="login-botao">
                     <button>
-                        <a href="#"> Entrar</a>
+                        <a href="#" onclick=Entrar()> Entrar</a>
                     </button>
                 </div>
             </form>
