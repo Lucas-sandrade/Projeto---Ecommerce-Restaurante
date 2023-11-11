@@ -11,16 +11,3 @@ function Entrar(){
     }
 }
 
-const campos = document.querySelectorAll('.required');
-
-function setError(index){
-    campos[index].style.border = '2px solid #e63636';
-}
-
-function nameValidate(){
-    if(campos[0].value.length < 3){
-        setError(0);
-    } else {
-        alert("Seu login falhou")
-    }
-}
