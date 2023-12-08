@@ -11,14 +11,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #B0E0E6;
+    background-image: linear-gradient(to bottom, #4ccd95, #4cc38a, #4cba7f, #4bb074, #4aa76a, #509b5f, #548f55, #55834d, #577145, #546040, #4d513d, #42423b);
 }
 
 .container {
     width: 80%;
     height: 80vh;
     display: flex;
-   
+
 }
 
 .form {
@@ -41,6 +41,10 @@ body {
     padding: 3rem;
 }
 
+.form-imagem {
+    color: #fff;
+    font-size: 30px;
+}
 
 .form-header {
     margin-top: 0.5rem;
@@ -73,7 +77,7 @@ body {
     border-radius: 4px;
     box-shadow: 1px 3px 6px #1C1C1C;
     width: 400px;
-    
+
 }
 
 .input-box label {
@@ -83,34 +87,20 @@ body {
     color: #000000;
 }
 
-.login-botao button{
-    width: 60%;
-    margin-top: 2rem;
-    border: none;
-    background-color:#B0E0E6;
-    padding: 0.44rem;
-    border-radius: 6px;
+.login-botao button {
+    background: rgb(209, 7, 175);
+    padding: 12px;
+    border-radius: 4px;
     cursor: pointer;
+
 }
 
 .login-botao button a {
     text-decoration: none;
-    font-size:  0.93rem;
+    font-size: 0.93rem;
     font-weight: 600;
     color: #000000;
-    
-}
 
-@media screen and (max-width: 1330px) {
-    .form-imagem {
-        display: none;
-    }
-    .container {
-        width: 50%;
-    }
-    .form {
-        width: 100%;
-    }
 }
 
 @media screen and (max-width: 1064px) {
@@ -118,11 +108,12 @@ body {
         width: 90%;
         height: auto;
     }
+
     .input-grupo {
         flex-direction: column;
         padding-right: 5rem;
         max-height: 10rem;
-        
+
     }
 
     @media screen and (max-width: 580px) {
@@ -130,9 +121,10 @@ body {
             width: auto;
             height: auto;
         }
+
         .input-grupo input {
             width: auto;
         }
     }
-    
+
 }

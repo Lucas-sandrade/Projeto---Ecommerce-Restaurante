@@ -1,13 +1,22 @@
-function Entrar(){
+function checkLogin() {
     var email = document.getElementById('email').value;
-    var senha = document.getElementById('senha').value;
+    var password = document.getElementById('password').value;
 
-    let nome = "lucas@gmail.com";
+    // Obter clientes do localStorage (se existirem)
+    var customers = JSON.parse(localStorage.getItem("customers")) || [];
 
-    if (email == nome && senha == 1234567){
-        alert("Ola, Lucas");
+    // Verificar se o email e senha existem na lista de clientes
+    var loginSucesso = customers.some(function (customer) {
+        return customer.email === email && customer.password === password;
+    });
+
+    if (loginSucesso) {
+        alert("Login realizado com sucesso");
+        window.location.href = "telaInicial.html";  // Redireciona para a página desejada
+
     } else {
-        alert("Seu login falhou")
+        window.location.reload();  // Recarrega a página
+        alert("Erro ao realizar login, tente novamente");
+
     }
 }
-

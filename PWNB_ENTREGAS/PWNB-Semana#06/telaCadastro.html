@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,15 +10,16 @@
     <title>Formulário de cadastro</title>
 
 </head>
+
 <body>
     <div class="container">
 
         <div class="form-imagem">
-            <img src="" alt="">
+            <h1> Venha conhecer nosso Restaurante!!</h1>
         </div>
-    
+
         <div class="form">
-            <form action="#">
+            <form action="#" id="form-register">
                 <div class="form-header">
                     <div class="title">
                         <h1>Inscreva-se</h1>
@@ -26,8 +28,8 @@
 
                 <div class="input-grupo">
                     <div class="input-box">
-                        <label for="nomeUsuario">Nome Completo</label>
-                        <input id="nome" type="text" name="nome" required oninput="nameValidate()">
+                        <label for="nomeCliente">Nome Completo</label>
+                        <input id="name" type="text" name="name" oninput="validationName()" required>
                     </div>
 
                     <div class="input-box">
@@ -37,36 +39,38 @@
 
                     <div class="input-box">
                         <label for="cpf">CPF</label>
-                        <input id="cpf" type="text" name="cpf" oninput="mascara_cpf()" autocomplete="off" maxlength="14" required>
+                        <input id="cpf" type="text" name="cpf" oninput="mask_cpf()" autocomplete="off" maxlength="14"
+                            required>
                     </div>
 
                     <div class="input-box">
                         <label for="telefone">Telefone</label>
-                        <input id="tel" type="tel" name="telefone" oninput="mascara_telefone()" autocomplete="off" maxlength="15" required>
+                        <input id="phone" type="tel" name="telefone" oninput="mask_phone()" autocomplete="off"
+                            maxlength="15" required>
                     </div>
 
                     <div class="input-box">
                         <label for="senhaUsuario">Senha</label>
-                        <input id="senha" type="password" name="senha" required>
+                        <input id="password" type="password" name="password" oninput="validationPassword()" required>
                     </div>
 
                     <div class="input-box">
                         <label for="confirmacaosenha">Repita sua senha</label>
-                        <input id="confirmacaosenha" type="password" name="confirmacaosenha" required>
+                        <input id="confirmPassword" type="password" name="confirmacaosenha"
+                            oninput="validationPasswordd()" required>
                     </div>
 
                 </div>
 
                 <div class="login-botao">
-                    <button>
-                        <a href="#">Cadastre-se</a>
-                    </button>
+                    <input type="submit" value="Cadastre-se">
                 </div>
 
             </form>
         </div>
 
     </div>
-        
+
 </body>
+
 </html>
