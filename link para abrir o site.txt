@@ -1,0 +1,5 @@
+Boa tarde, Professor
+Como não conseguimos hospedar no git pages, hospedamos nosso site em outra plataforma.
+
+Segue o link abaixo:
+https://astonishing-pika-e90243.netlify.app
